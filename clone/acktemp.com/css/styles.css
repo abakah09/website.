@@ -1,0 +1,199 @@
+@charset "utf-8";
+/* CSS Document */
+h1,h2,h3,h4,h5 {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight:bold;
+}
+#logo {
+	padding-bottom: 20px;
+	padding-top: 20px;
+		
+}
+#topbar {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background-image: url(../img/bkgnd-clouds.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+#background {
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 40px;
+}
+
+body {
+	padding: 0px;
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #FFF;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.container .col-lg-8 .col-lg-6 {
+	padding-left: 0px;
+}
+.container p  {
+	text-align: justify;
+}
+#topbar .container .navbar.navbar-inverse .container-fluid #bs-example-navbar-collapse-1 .nav.navbar-nav .dropdown .dropdown-toggle {
+	font-weight: bold;
+	color: #FFF;
+}
+#topbar .container .navbar.navbar-inverse .container-fluid #bs-example-navbar-collapse-1 .nav.navbar-nav li a {
+	font-weight: bold;
+	color: #FFF;
+}
+#topbar .container .navbar.navbar-inverse .container-fluid #bs-example-navbar-collapse-1 .nav.navbar-nav .dropdown .dropdown-menu   {
+	color: #FFF;
+	background-color: #333;
+}
+
+#topbar .container .navbar.navbar-inverse .container-fluid #bs-example-navbar-collapse-1 .nav.navbar-nav .dropdown .dropdown-menu li:hover{
+	background-color: #333;
+}
+.footer {
+	color: #CCC;
+	background-color: #293b50;
+}
+
+#topbar .container .navbar.navbar-inverse .container-fluid #bs-example-navbar-collapse-1 .nav.navbar-nav .dropdown .dropdown-menu li a {
+	color: #FFF;
+}
+#topbar .container .navbar.navbar-inverse .container-fluid #bs-example-navbar-collapse-1 .nav.navbar-nav .dropdown .dropdown-menu li a:hover {
+	color: #333;
+}
+
+
+
+
+.panel-heading {
+	font-weight: bold;
+}
+.container .col-lg-4 .col-lg-12 .panel.panel-primary .panel-body p {
+	text-align: justify;
+}
+#topbar .container .row .col-lg-6 .pull-right {
+	color: #eee;
+	padding-top: 30px;
+}
+.container .row.clearfix .col-lg-8 hr {
+	border-top-width: thick;
+	border-right-width: thick;
+	border-bottom-width: thick;
+	border-left-width: thick;
+	border-top-color: #293f53;
+	border-right-color: #293f53;
+	border-bottom-color: #293f53;
+	border-left-color: #293f53;
+}
+.container .row .col-lg-12 .pull-right {
+	font-weight: bold;
+	color: #FFF;
+}
+.container .row.clearfix .col-lg-8 .panel.panel-default .row.clearfix .col-lg-6 ul li {
+	margin-left: 20px;
+}
+.container .row.clearfix .col-lg-8 blockquote {
+	border-left-color: #293f53;
+}
+.container .row.clearfix .col-lg-8 h4 .img-thumbnail {
+	margin-right: 15px;
+}
+.container .row.clearfix .col-lg-8 ul li {
+
+}
+.container .row.clearfix .col-lg-8 h4 img {
+	padding-right: 20px;
+}
+.container .row.clearfix .col-lg-8 h4 {
+}
+.container .row.clearfix .col-lg-8 .row.clearfix.manufacturer {
+	margin-top: 20px;
+	padding-bottom: 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #666;
+}
+
+.container .row.clearfix .col-lg-8 .row.clearfix.manufacturer.description {
+	vertical-align: middle;
+}
+
+.container .row.clearfix .col-lg-8 div .tab-content #HVAC .col-md-3.thumbnail {
+	clear: left;
+}
+.manufacturer_divider {
+	height: 1px;
+	width:100%;
+	display:block; /* for use on default inline elements like span */
+	margin: 20px 0;
+	overflow: hidden;
+	background-color: #CCC;
+}
+.container .row.clearfix .col-lg-8 div .tab-content {
+	background-color: #FFF;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	color: #293b50;
+	cursor: default;
+	background-color: #FFF;
+	border: 1px solid #293b50;
+	border-bottom-color: transparent;
+	font-weight: bold;
+}
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+	background-color:#293b50;
+	color:#FFF;
+	font-weight: bold;
+
+}
+.nav-tabs > li > a:hover {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+	background-color:#344b66;
+	color:#FFF;
+	font-weight: bold;
+}
+.container .row.clearfix .col-lg-6 .pull-right {
+text-shadow: 0 0 6px #293b50;	
+}.tab-container       {
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #293b50;
+	border-right-color: #293b50;
+	border-bottom-color: #293b50;
+	border-left-color: #293b50;
+}
+.nav-tabs {
+    border-bottom: 1px solid #293b50;
+}.page-headings {
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #293b50;
+}
+.margin-right {
+
+}
+.icons {
+	margin-right: 10px;
+}
+.icon-heading {
+	margin-bottom: 20px;
+}
+.panel.panel-primary .panel-body p {
+	font-size: 12px;
+}
