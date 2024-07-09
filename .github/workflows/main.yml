@@ -9,34 +9,13 @@ jobs:
     name: run pull
     runs-on: ubuntu-latest
     steps:
-    - name: cleanup
-      run: rm -rf ~/.ssh
-
-    - name: install ssh keys
-      run: |
-        install -m 600 -D /dev/null ~/.ssh/id_rsa
-        echo "${{ secrets.PRIVATE_KEY }}" > ~/.ssh/id_rsa
-        ssh-keyscan -H ${{ secrets.HOSTIP }} > ~/.ssh/known_hosts
-    
-    - name: connect and pull
-      run: 
-          ssh ${{ secrets.USER_NAME }}@${{ secrets.HOSTIP }} 
-          "
-            cd ../var/www/html/
-            && pwd 
-            && ls 
-            && exit
-          " 
-          
-    - name: directory path
-      run: pwd
-
-    
-
-
-
-
-
-
-
-
+    - uses: actions/checkout@v3
+    - name: rsync deployments
+      uses: burnett01/rsync-deployments@6.0.0
+      with:
+        switches: -avzr --filter=':- .gitignore'
+        path: ./
+        remote_path: ${{ secrets.PUBLIC_PATH }}
+        remote_host: ${{ secrets.HOSTIP }}
+        remote_user: ${{ secrets.USER_NAME }}
+        remote_key: ${{ secrets.PRIVATE_KEY }}
