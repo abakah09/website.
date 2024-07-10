@@ -1,0 +1,42 @@
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  
+jobs:
+  run_pull:
+    name: run pull
+    runs-on: ubuntu-latest
+    steps:
+    - name: cleanup
+      run: rm -rf ~/.ssh
+
+    - name: install ssh keys
+      run: |
+        install -m 600 -D /dev/null ~/.ssh/id_rsa
+        echo "${{ secrets.PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        ssh-keyscan -H ${{ secrets.HOSTIP }} > ~/.ssh/known_hosts
+    
+    - name: connect and pull
+      run: 
+          ssh ${{ secrets.USER_NAME }}@${{ secrets.HOSTIP }} 
+          "
+            cd ../var/www/html/
+            && pwd 
+            && ls 
+            && exit
+          " 
+          
+    - name: directory path
+      run: pwd
+
+    
+
+
+
+
+
+
+
+
